@@ -17,7 +17,7 @@ function CardPage() {
   };
 
   const handleDelete = (cardId) => {
-    fetch(`http://localhost:3000/boards/${id}/${cardId}`, {
+    fetch(`https://kudos-board-4dsm.onrender.com/boards/${id}/${cardId}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -34,7 +34,7 @@ function CardPage() {
   };
 
   useEffect(() => {
-    const URL = `http://localhost:3000/boards/${id}`;
+    const URL = `https://kudos-board-4dsm.onrender.com/boards/${id}`;
     fetch(URL, { method: "GET" })
       .then((response) => {
         if (!response.ok) {

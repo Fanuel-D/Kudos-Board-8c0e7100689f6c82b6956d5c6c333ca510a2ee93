@@ -24,7 +24,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/boards/${id}`, {
+    fetch(`https://kudos-board-4dsm.onrender.com/boards/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -41,9 +41,9 @@ function App() {
   };
 
   useEffect(() => {
-    let URL = `http://localhost:3000/boards`;
+    let URL = `https://kudos-board-4dsm.onrender.com/boards`;
     if (searchQuery != "") {
-      URL = `http://localhost:3000/boards/search?boardName=${searchQuery}`;
+      URL = `https://kudos-board-4dsm.onrender.com/boards/search?boardName=${searchQuery}`;
     }
     fetch(URL, { method: "GET" })
       .then((response) => {

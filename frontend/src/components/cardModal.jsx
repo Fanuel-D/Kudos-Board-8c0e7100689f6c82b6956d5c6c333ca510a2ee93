@@ -51,7 +51,7 @@ function CardModal({ isOpenBool, isClosedFunc, id }) {
   };
 
   const handleSubmit = () => {
-    fetch(`http://localhost:3000/boards/${id}`, {
+    fetch(`https://kudos-board-4dsm.onrender.com/boards/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -11,7 +11,7 @@ function KudosCard({ id, card, handleDelete }) {
 
 
   const handleSubmit = () => {
-    fetch(`http://localhost:3000/boards/comments/${id}/${card.cardId}`, {
+    fetch(`https://kudos-board-4dsm.onrender.com/boards/comments/${id}/${card.cardId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function KudosCard({ id, card, handleDelete }) {
 
   const handleVoteClicked = () => {
     let newCount = voteCount + 1;
-    fetch(`http://localhost:3000/boards/${id}/${card.cardId}`, {
+    fetch(`https://kudos-board-4dsm.onrender.com/boards/${id}/${card.cardId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
