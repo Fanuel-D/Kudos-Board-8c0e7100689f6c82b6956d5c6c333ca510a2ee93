@@ -1,0 +1,32 @@
+.appHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 30;
+  margin: 0;
+  padding: 1rem;
+  background-color: #282c34;
+  z-index: 10;
+  margin-top: 0;
+}
+
+.bodyPart {
+  display: flex;
+  width: 100vw;
+}
+
+.innerBodyPart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16rem;
+  margin-bottom: 70px;
+}
+
+.appFooter {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}

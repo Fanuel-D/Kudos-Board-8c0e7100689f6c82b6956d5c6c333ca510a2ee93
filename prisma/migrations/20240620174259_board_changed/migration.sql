@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Board" ALTER COLUMN "createdAt" SET DATA TYPE TEXT;

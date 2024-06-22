@@ -1,0 +1,63 @@
+.cardModalBackDrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+}
+.gifOptions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gifContainer {
+  margin: 5px;
+}
+
+.gif {
+  border-radius: 8px;
+  height: 150px;
+  width: 150px;
+}
+
+.cardModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+  padding: 10px;
+  border-radius: 8px;
+  width: 60%;
+  height: 60%;
+  overflow-y: auto;
+}
+
+form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.trailer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImg {
+  width: 50%;
+  height: 40%;
+  border: none;
+  border-radius: 10px;
+}
